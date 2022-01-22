@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Guitar App</title>
+</head>
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+<body class="container">
+    <br>
+    <div>
+        <h1 style="color: cadetblue; text-align: center;">Tour Guitar Choice</h1>
+    </div>
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <h4 style="text-align: center;">Select The Dates of the Tour</h4>
+            <div class="row my-3">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-start-date">Tour Start Date</label>
+                        <input type="date" class="form-control" id="new-start-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-end-date">Tour End Date</label>
+                        <input type="date" class="form-control" id="new-end-date">
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-guitar">Guitar <strong>Type</strong></label>
+                        <input type="text" class="form-control" id="new-guitar" placeholder="Enter Guitar Type">
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="guitar-tuning">Guitar <strong>Tuning</strong></label>
+                        <input type="text" class="form-control" id="guitar-tuning" placeholder="Enter Guitar Tuning">
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-md-2">
+                    <button id="add" class="btn btn-primary form-control">Create</button>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <table id="list" class="table table-dark table-striped my-3">
+        <tr>
+            <th>Guitar</th>
+            <th>Guitar Tuning</th>
+            <th>Start Date</th>
+            <th>Due Date</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+    
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="ToDo.js"></script>
+</body>
+</html>
